@@ -95,6 +95,10 @@ export const Hero: React.FC<HeroProps> = ({ language, onOpenCv }) => {
           {/* Right Column: Editorial Visual Container */}
           <div className="lg:col-span-5 flex flex-col justify-center">
             <div className="relative group rounded-2xl overflow-hidden bg-[#F5EFEB] border border-[#EBDED0] shadow-sm">
+              <div className="absolute left-4 top-4 z-10 flex items-center gap-2 rounded-full bg-[#FAF8F5]/90 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[.18em] text-[#181615] backdrop-blur-sm">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#B89758]" />
+                Atelier abierto a proyectos
+              </div>
               <img
                 src={portfolioImages.hero}
                 alt="Silvia Velandia en su atelier de moda"
@@ -114,6 +118,10 @@ export const Hero: React.FC<HeroProps> = ({ language, onOpenCv }) => {
                   Diseño de autor, patronaje a medida y versatilidad profesional
                 </p>
               </div>
+            </div>
+            <div className="mt-3 flex items-center justify-between px-1 text-[10px] uppercase tracking-[.2em] text-[#9E7D40]">
+              <span>SV / Portfolio 2025</span>
+              <span className="flex items-center gap-2"><span className="h-px w-8 bg-[#B89758]" /> Madrid · España</span>
             </div>
           </div>
         </div>

@@ -84,7 +84,7 @@ export const Atelier: React.FC<AtelierProps> = ({ language }) => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="atelier-gallery grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredItems.map((item) => (
             <div
               key={item.id}

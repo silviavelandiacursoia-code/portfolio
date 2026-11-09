@@ -1,8 +1,8 @@
 import { ExperienceItem, EducationItem, SkillItem, AtelierItem } from '../types/portfolio';
-import heroImage from '../assets/images/silvia-retrato-real.png';
-import diplomaImage from '../assets/images/silvia-diploma-diseno-moda.png';
-import redBlueDressImage from '../assets/images/silvia-vestido-rojo-azul.png';
-import patternImage from '../assets/images/silvia-patronaje-real.png';
+import heroImage from '../assets/images/silvia-retrato-real-web.jpg';
+import diplomaImage from '../assets/images/silvia-diploma-diseno-moda-web.jpg';
+import redBlueDressImage from '../assets/images/silvia-vestido-rojo-azul-web.jpg';
+import patternImage from '../assets/images/silvia-patronaje-real-web.jpg';
 import yellowCapeDressImage from '../assets/images/silvia-vestido-capa-amarilla.jpeg';
 
 export const portfolioImages = {

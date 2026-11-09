@@ -84,6 +84,13 @@ header::after {
 .atelier-proof { box-shadow: 0 10px 30px rgba(92,51,32,.06); }
 .about-credential { position: relative; }
 .about-credential::before { content: ""; position: absolute; inset: -7px 7px 7px -7px; border: 1px solid rgba(168,91,61,.35); border-radius: .75rem; pointer-events: none; }
+.voice-guide { background: linear-gradient(135deg, #ead5c2 0%, #f7eade 100%); }
+.voice-intro, .voice-panel { box-shadow: 0 16px 36px rgba(92,51,32,.12); }
+.voice-action, .voice-topic { display: inline-flex; align-items: center; gap: .45rem; border-radius: 999px; font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: .7rem 1rem; transition: transform .2s ease, background .2s ease; }
+.voice-action:hover, .voice-topic:hover { transform: translateY(-2px); }
+.voice-action { color: #7a3f2b; background: #f2ddcb; }
+.voice-action-dark { color: #fffaf4; background: #2d211d; }
+.voice-topic { color: #61483e; border: 1px solid #d7b89b; background: transparent; }
 
 #inicio { padding-top: 5.5rem; background: transparent; }
 #inicio h1 { font-size: clamp(3.3rem, 7vw, 7rem); letter-spacing: -.065em; }

@@ -8,6 +8,7 @@ import { Language } from './types/portfolio';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ClientNeeds } from './components/ClientNeeds';
+import { VoiceGuide } from './components/VoiceGuide';
 import { About } from './components/About';
 import { Experience } from './components/Experience';
 import { Education } from './components/Education';
@@ -34,6 +35,7 @@ export default function App() {
       <main className="grow">
         <Hero language={language} onOpenCv={() => setIsCvOpen(true)} />
         <ClientNeeds language={language} />
+        <VoiceGuide language={language} />
         <About language={language} />
         <Experience language={language} />
         <Education language={language} />

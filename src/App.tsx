@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { Language } from './types/portfolio';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { ClientNeeds } from './components/ClientNeeds';
 import { About } from './components/About';
 import { Experience } from './components/Experience';
 import { Education } from './components/Education';
@@ -32,6 +33,7 @@ export default function App() {
       {/* Main Content Area */}
       <main className="grow">
         <Hero language={language} onOpenCv={() => setIsCvOpen(true)} />
+        <ClientNeeds language={language} />
         <About language={language} />
         <Experience language={language} />
         <Education language={language} />

@@ -34,6 +34,11 @@ export const Atelier: React.FC<AtelierProps> = ({ language }) => {
             </p>
           </div>
 
+          <div className="atelier-proof hidden md:flex items-center gap-3 px-4 py-3 rounded-xl border border-[#d7b89b]/60 bg-[#fffaf4]/80 text-xs text-[#61483e] max-w-xs">
+            <span className="w-2 h-2 rounded-full bg-[#a85b3d] shrink-0" />
+            <span>{language === 'es' ? 'Cada diseño parte de una necesidad y se trabaja con intención.' : 'Every design starts with a need and is made with intention.'}</span>
+          </div>
+
           {/* Interactive Filter Tabs (Functional segmented buttons) */}
           <div className="flex flex-wrap items-center gap-1.5 p-1 bg-[#FBF9F5] border border-[#DECBB7] rounded-full self-start md:self-auto shadow-xs">
             <button

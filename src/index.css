@@ -22,8 +22,8 @@
   --cream: #f7f4ef;
   --paper: #fffdf9;
   --line: rgba(137, 108, 78, .22);
-  --gold: #a9793b;
-  --shadow: 0 20px 60px rgba(48, 35, 25, .08);
+  --gold: #a85b3d;
+  --shadow: 0 20px 60px rgba(92, 51, 32, .12);
 }
 
 @layer base {
@@ -32,7 +32,7 @@
     font-family: var(--font-sans);
     background: var(--cream);
     color: var(--ink);
-    background-image: radial-gradient(rgba(23,20,18,.035) .7px, transparent .7px);
+    background-image: radial-gradient(rgba(92,51,32,.045) .7px, transparent .7px);
     background-size: 8px 8px;
   }
   h1, h2, h3, h4, .font-editorial { font-family: var(--font-serif); }
@@ -73,8 +73,17 @@ header::after {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: -1px; height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(169,121,59,.55), transparent);
+  background: linear-gradient(90deg, transparent, rgba(168,91,61,.65), transparent);
 }
+
+.client-needs {
+  background: linear-gradient(135deg, #f4e6d8 0%, #f8efe6 54%, #ead5c2 100%);
+}
+.needs-card { transition: transform .3s ease, box-shadow .3s ease, background .3s ease; }
+.needs-card:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(92,51,32,.12); background: #fffdf9; }
+.atelier-proof { box-shadow: 0 10px 30px rgba(92,51,32,.06); }
+.about-credential { position: relative; }
+.about-credential::before { content: ""; position: absolute; inset: -7px 7px 7px -7px; border: 1px solid rgba(168,91,61,.35); border-radius: .75rem; pointer-events: none; }
 
 #inicio { padding-top: 5.5rem; background: transparent; }
 #inicio h1 { font-size: clamp(3.3rem, 7vw, 7rem); letter-spacing: -.065em; }

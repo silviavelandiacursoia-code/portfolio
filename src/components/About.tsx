@@ -1,6 +1,6 @@
 import React from 'react';
 import { Language } from '../types/portfolio';
-import { contentData } from '../data/content';
+import { contentData, portfolioImages } from '../data/content';
 import { Palette, Clock, Wrench, RefreshCw, Quote } from 'lucide-react';
 
 interface AboutProps {
@@ -33,7 +33,8 @@ export const About: React.FC<AboutProps> = ({ language }) => {
         {/* Verbatim CV Bio in Editorial Card */}
         <div className="p-8 sm:p-10 rounded-2xl bg-[#FBF9F5] border border-[#EBDED0] shadow-xs mb-14 relative overflow-hidden">
           <Quote className="absolute top-6 right-6 w-12 h-12 text-[#EBDED0]/60 pointer-events-none" />
-          <div className="max-w-4xl relative z-10">
+          <div className="relative z-10 grid lg:grid-cols-[1fr_220px] gap-8 items-start">
+            <div className="max-w-4xl">
             <span className="text-xs uppercase tracking-widest text-[#9E7D40] font-semibold mb-3 block">
               Extracto del Currículum Vitae Oficial
             </span>
@@ -44,6 +45,11 @@ export const About: React.FC<AboutProps> = ({ language }) => {
               <p>{t.storyP1}</p>
               <p>{t.storyP2}</p>
             </div>
+            </div>
+            <figure className="about-credential">
+              <img src={portfolioImages.diploma} alt="Silvia Velandia con su diploma de Diseñador de Modas" className="w-full aspect-[4/5] object-cover object-center rounded-xl border border-[#DECBB7]" />
+              <figcaption className="mt-3 text-[10px] uppercase tracking-[.16em] leading-relaxed text-[#9E7D40]">Formación especializada en diseño de modas</figcaption>
+            </figure>
           </div>
         </div>
 

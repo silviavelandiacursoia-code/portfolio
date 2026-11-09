@@ -1,12 +1,17 @@
 import { ExperienceItem, EducationItem, SkillItem, AtelierItem } from '../types/portfolio';
+import heroImage from '../assets/images/silvia-retrato-real.png';
+import diplomaImage from '../assets/images/silvia-diploma-diseno-moda.png';
+import redBlueDressImage from '../assets/images/silvia-vestido-rojo-azul.png';
+import patternImage from '../assets/images/silvia-patronaje-real.png';
+import yellowCapeDressImage from '../assets/images/silvia-vestido-capa-amarilla.jpeg';
 
 export const portfolioImages = {
-  hero: '/src/assets/images/silvia-retrato-real.png',
-  diploma: '/src/assets/images/silvia-diploma-diseno-moda.png',
-  coutureDress: '/src/assets/images/silvia-vestido-rojo-azul.png',
-  accessories: '/src/assets/images/silvia-retrato-real.png',
-  workshopProcess: '/src/assets/images/silvia-patronaje-real.png',
-  collectionModel: '/src/assets/images/silvia-vestido-capa-amarilla.jpeg',
+  hero: heroImage,
+  diploma: diplomaImage,
+  coutureDress: redBlueDressImage,
+  accessories: heroImage,
+  workshopProcess: patternImage,
+  collectionModel: yellowCapeDressImage,
 };
 
 export const contactDetails = {
